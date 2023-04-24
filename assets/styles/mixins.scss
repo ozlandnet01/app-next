@@ -1,0 +1,86 @@
+@import './variables.scss';
+
+@mixin outline-button($color, $text-color) {
+  border: 2px solid $color;
+  background: none;
+  color: $color;
+
+  &.disabled {
+    color: $color !important;
+    background: transparent !important;
+  }
+
+  &:hover {
+    background: $color;
+    color: $text-color;
+  }
+}
+
+@mixin solid-button($color, $text-color) {
+  background: $color;
+  color: $text-color;
+  border: none;
+
+  &:hover {
+    background: darken($color: $color, $amount: 10);
+  }
+
+  &.disabled {
+    &:hover {
+      background: $color;
+    }
+  }
+}
+
+@mixin link-button($color) {
+  border: none;
+  background: none;
+  color: $color;
+  padding: 0 !important;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0px;
+    height: 2px;
+    transition: 0.25s ease-in-out;
+    background-color: lighten($color, 10%);
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+@mixin sm-x {
+  @for $i from 1 through $columns {
+    .sm-#{$i} {
+      width: ($i/$columns) * 100%;
+    }
+  }
+}
+
+@mixin md-x {
+  @for $i from 1 through $columns {
+    @media screen and (min-width: 481px) {
+      .md-#{$i} {
+        width: ($i/$columns) * 100%;
+      } 
+    }
+  }
+}
+
+@mixin lg-x {
+  @for $i from 1 through $columns {
+    @media screen and (min-width: 769px) {
+      .lg-#{$i} {
+        width: ($i/$columns) * 100%;
+      } 
+    }
+  }
+}

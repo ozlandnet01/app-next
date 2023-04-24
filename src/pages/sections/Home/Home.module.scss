@@ -1,0 +1,27 @@
+
+
+.words{
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: -32px;
+}
+
+.numbers{
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.separator{
+    margin-top: 18px;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.countdown{
+    background:url('../../../../assets/img/bg.png')  
+    no-repeat center center;
+    background-size:100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}

@@ -1,0 +1,10 @@
+.box {
+    opacity: 0;
+    transition: ease-out 500ms;
+  }
+  
+.animate {
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+}
+  
