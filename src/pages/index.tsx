@@ -33,7 +33,7 @@ export default function App() {
                   </div>
                   <div className='flex items-center justify-center' style={{flex: 3}}>
                     <div>
-                      <Image src={`/https://github.com/ozlandnet01/app-next/blob/main/public/world-map.png?raw=true`} width={800} height={800} alt="My image"/>
+                      <Image src={`https://github.com/ozlandnet01/app-next/blob/main/public/world-map.png?raw=true`} width={800} height={800} alt="My image"/>
                     </div>
                   </div>
                 </div>
