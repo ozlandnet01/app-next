@@ -22,7 +22,7 @@ const Navbar = ({ }) => {
       flex justify-between px-10 transition duration-500 ease-linear`}>
       <div className='flex w-24 justify-center items-center ml-10'> 
         <a>
-          <Image className='w-36' src={`/logo/sod.png`} width={500} height={500} alt="My image"/>
+          <Image className='w-36' src={`https://github.com/ozlandnet01/app-next/blob/main/public/logo/sod.png?raw=true`} width={500} height={500} alt="My image"/>
         </a>
       </div>
       <div className="flex w-6/12">

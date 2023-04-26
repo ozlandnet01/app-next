@@ -29,11 +29,11 @@ export default function App() {
               <div className={`flex h-screen p-9`}>
                 <div className='w-full flex'>
                   <div className='flex items-center justify-center' style={{flex: 2}}>
-                    <Image src={`/logo/white.png`} width={360} height={148} alt="My image"/>
+                    <Image src={`https://github.com/ozlandnet01/app-next/blob/main/public/logo/white.png?raw=true`} width={360} height={148} alt="My image"/>
                   </div>
                   <div className='flex items-center justify-center' style={{flex: 3}}>
                     <div>
-                      <Image src={`/world-map.png`} width={800} height={800} alt="My image"/>
+                      <Image src={`/https://github.com/ozlandnet01/app-next/blob/main/public/world-map.png?raw=true`} width={800} height={800} alt="My image"/>
                     </div>
                   </div>
                 </div>

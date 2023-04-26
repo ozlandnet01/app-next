@@ -24,7 +24,7 @@ export default function Home() {
     <div id='home' className={`flex h-screen justify-center items-center`}>
         <div className='flex h-1/4 flex-col justify-between items-center' style={{width: 488}}>
         <div className='image'>
-            <Image src={`/logo/white.png`} width={360} height={148} alt="My image"/>
+            <Image src={`https://github.com/ozlandnet01/app-next/blob/main/public/logo/white.png?raw=true`} width={360} height={148} alt="My image"/>
         </div>
         <div className='bg-white w-full mt-11 px-5' style={{minHeight: 160}}>
             <div className={`${styles.countdown} flex w-full  justify-around text-center`} style={{minHeight: 160}}>
