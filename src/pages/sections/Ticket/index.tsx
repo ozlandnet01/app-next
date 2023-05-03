@@ -94,7 +94,7 @@ export default function Home() {
               <Image className='w-36' src={`/image/Ticket/ticket2.svg`} fill alt="My image"/>
           </div>
           <div className='text-black mx-1 relative w-1/4 h-48'>
-              <Image className='w-36' src={`/image/Ticket/ticket3.svg`} fill alt="My image"/>
+              <Image className='w-36' src={'/image/Ticket/ticket3.svg'} fill alt="My image"/>
           </div>
         </div>
       </div>
