@@ -31,7 +31,7 @@ export default function Home() {
           <span className={`${styles.spicyRiceShadow} text-7xl font-normal tracking-tighter`}>COUNTDOWN TO</span>
           <span className={`${styles.spicyRiceShadow} text-4xl tracking-tighter`}>SOUNDS OF DOWNTOWN Vol. 5</span>
         </div>
-        <div className={`${styles.countdownStroke} text-white self-center border-text flex justify-around text-center items-center h-28 w-2/3 pb-8`} style={{backgroundColor: '#33A9AC', border: '4px solid #0C0C0C', borderRadius: 12}}>
+        <div className={`${styles.countdownStroke} text-white self-center border-text flex justify-around text-center items-center h-28 w-fit pb-8`} style={{backgroundColor: '#33A9AC', border: '4px solid #0C0C0C', borderRadius: 12}}>
           <div className='week w-40'>
             <div className={styles.numbers}>
               {weeks}
