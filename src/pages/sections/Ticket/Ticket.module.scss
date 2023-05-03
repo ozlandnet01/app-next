@@ -17,6 +17,25 @@
     font-weight: 900;
 }
 
+@media screen and (max-width: 767px) {
+    .words{
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: -32px;
+    }
+    
+    .numbers{
+        font-size: 64px;
+        font-weight: 900;
+    }
+    
+    .separator{
+        margin-top: 18px;
+        font-size: 64px;
+        font-weight: 900;
+    }
+}
+
 .countdownStroke{
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;

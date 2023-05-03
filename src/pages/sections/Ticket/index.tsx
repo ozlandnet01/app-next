@@ -32,9 +32,9 @@ export default function Home() {
           <span className={`${styles.spicyRiceShadow} text-4xl tracking-tighter`}>SOUNDS OF DOWNTOWN Vol. 5</span>
         </div>
         <div className={`${styles.countdownStroke} text-white self-center border-text flex justify-around text-center items-center h-28 w-fit pb-8`} style={{backgroundColor: '#33A9AC', border: '4px solid #0C0C0C', borderRadius: 12}}>
-          <div className='week w-40'>
+          <div className='week md:w-40'>
             <div className={styles.numbers}>
-              {weeks}
+              {weeks.toString().length == 1 ?  '0'+ weeks.toString() : weeks} 
             </div>
             <div className={styles.words}>
               Weeks
@@ -43,9 +43,9 @@ export default function Home() {
           <div className={`${styles.separator} min-w-fit`}>
             <span>:</span>
           </div>
-          <div className='day w-40'>
+          <div className='day md:w-40'>
             <div className={styles.numbers}>
-              {days}
+              {days.toString().length == 1 ?  '0'+ days.toString() : days} 
             </div>
             <div className={styles.words}>
               Days
@@ -54,9 +54,9 @@ export default function Home() {
           <div className={`${styles.separator} min-w-fit`}>
             <span>:</span>
           </div>
-          <div className='day w-40'>
+          <div className='day md:w-40'>
             <div className={styles.numbers}>
-              {hours}
+              {hours.toString().length == 1 ?  '0'+ hours.toString() : hours} 
             </div>
             <div className={styles.words}>
               Hours
@@ -65,9 +65,9 @@ export default function Home() {
           <div className={`${styles.separator} min-w-fit`}>
             <span>:</span>
           </div>
-          <div className='day w-40'>
+          <div className='day md:w-40'>
             <div className={styles.numbers}>
-              {minutes}
+              {minutes.toString().length == 1 ?  '0'+ minutes.toString() : minutes} 
             </div>
             <div className={styles.words}>
               Minutes
@@ -76,25 +76,25 @@ export default function Home() {
           <div className={`${styles.separator} min-w-fit`}>
             <span>:</span>
           </div>
-          <div className='day w-40'>
+          <div className='day md:w-40'>
             <div className={styles.numbers}>
-              {seconds}
+              {seconds.toString().length == 1 ?  '0'+ seconds.toString() : seconds} 
             </div>
             <div className={styles.words}>
               Seconds
             </div>
           </div>            
         </div>
-        <div className={`${styles.spicyRiceShadow} self-center text-8xl text-orange-300 mt-44`}>BUY TICKETS</div>
-        <div className={`flex text-white flex-1 min-w-full justify-around items-start pt-20 px-16`}>
-          <div className='text-black mx-1 relative w-1/4 h-48'>
-              <Image className='w-36' src={`https://raw.githubusercontent.com/ozlandnet01/app-next/a46c4cd1188ffe4b1a8507a0c951526611d0f0fb/public/image/Ticket/ticket1.svg`} fill alt="My image"/>
+        <div className={`${styles.spicyRiceShadow} self-center text-8xl text-center text-orange-300 mt-44`}>BUY TICKETS</div>
+        <div className={`flex text-white flex-1 min-w-full justify-center items-center md:flex-row flex-col pt-20 px-16`}>
+          <div className='text-black m-6 relative w-72 h-48 lg:mx-12 '>
+              <Image src={`https://raw.githubusercontent.com/ozlandnet01/app-next/a46c4cd1188ffe4b1a8507a0c951526611d0f0fb/public/image/Ticket/ticket1.svg`} fill alt="My image"/>
           </div>
-          <div className='text-black mx-1 relative w-1/4 h-48'>
-              <Image className='w-36' src={`https://raw.githubusercontent.com/ozlandnet01/app-next/a46c4cd1188ffe4b1a8507a0c951526611d0f0fb/public/image/Ticket/ticket2.svg`} fill alt="My image"/>
+          <div className='text-black m-6 relative w-72 h-48 lg:mx-12'>
+              <Image src={`https://raw.githubusercontent.com/ozlandnet01/app-next/a46c4cd1188ffe4b1a8507a0c951526611d0f0fb/public/image/Ticket/ticket2.svg`} fill alt="My image"/>
           </div>
-          <div className='text-black mx-1 relative w-1/4 h-48'>
-              <Image className='w-36' src={'https://raw.githubusercontent.com/ozlandnet01/app-next/a46c4cd1188ffe4b1a8507a0c951526611d0f0fb/public/image/Ticket/ticket3.svg'} fill alt="My image"/>
+          <div className='text-black m-6 relative w-72 h-48 lg:mx-12'>
+              <Image src={'https://raw.githubusercontent.com/ozlandnet01/app-next/a46c4cd1188ffe4b1a8507a0c951526611d0f0fb/public/image/Ticket/ticket3.svg'} fill alt="My image"/>
           </div>
         </div>
       </div>
