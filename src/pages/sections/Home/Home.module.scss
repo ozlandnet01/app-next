@@ -32,7 +32,8 @@
 }
 
 .banner{
-    background: url('../../../../public/image/banner/banner-desktop.svg');
+    background: url('../../../../public/image/banner/banner-desktop.svg') no-repeat;
     background-position: center bottom;
-    background-size: 100% auto;
+    min-height: 215px;
+    max-width: 100%;
 }

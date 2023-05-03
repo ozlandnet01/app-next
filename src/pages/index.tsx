@@ -20,7 +20,7 @@ export default function App() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Head>
       <CountdownProvider>
-        <main className={`${styles.container} min-h-screen flex-col items-center justify-between`}>
+        <main className={`${styles.container} min-h-screen flex-col items-center justify-between overflow-hidden`}>
           <Navbar />
           <TestingComponent scrollPositions={ScrollPositions}>
             <Home />

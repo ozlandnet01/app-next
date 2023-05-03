@@ -25,7 +25,7 @@ export default function Home() {
 
 
   return (
-    <div id='ticket' className={`flex h-screen mt-6`}>
+    <div id='ticket' className={`flex h-screen mt-20`}>
       <div className='bg-transparent w-full h-screen px-5 flex flex-col' style={{minHeight: 160}}>
         <div className={`flex flex-col items-center text-white justify-start h-32`}>
           <span className={`${styles.spicyRiceShadow} text-7xl font-normal tracking-tighter`}>COUNTDOWN TO</span>
@@ -88,13 +88,13 @@ export default function Home() {
         <div className={`${styles.spicyRiceShadow} self-center text-8xl text-orange-300 mt-44`}>BUY TICKETS</div>
         <div className={`flex text-white flex-1 min-w-full justify-around items-start pt-20 px-16`}>
           <div className='text-black mx-1 relative w-1/4 h-48'>
-              <Image className='w-36' src={`/image/Ticket/ticket1.svg`} fill alt="My image"/>
+              <Image className='w-36' src={`https://raw.githubusercontent.com/ozlandnet01/app-next/a46c4cd1188ffe4b1a8507a0c951526611d0f0fb/public/image/Ticket/ticket1.svg`} fill alt="My image"/>
           </div>
           <div className='text-black mx-1 relative w-1/4 h-48'>
-              <Image className='w-36' src={`/image/Ticket/ticket2.svg`} fill alt="My image"/>
+              <Image className='w-36' src={`https://raw.githubusercontent.com/ozlandnet01/app-next/a46c4cd1188ffe4b1a8507a0c951526611d0f0fb/public/image/Ticket/ticket2.svg`} fill alt="My image"/>
           </div>
           <div className='text-black mx-1 relative w-1/4 h-48'>
-              <Image className='w-36' src={'/image/Ticket/ticket3.svg'} fill alt="My image"/>
+              <Image className='w-36' src={'https://raw.githubusercontent.com/ozlandnet01/app-next/a46c4cd1188ffe4b1a8507a0c951526611d0f0fb/public/image/Ticket/ticket3.svg'} fill alt="My image"/>
           </div>
         </div>
       </div>
