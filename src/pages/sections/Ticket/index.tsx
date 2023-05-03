@@ -26,19 +26,12 @@ export default function Home() {
 
   return (
     <div id='ticket' className={`flex h-screen mt-6`}>
-      <div className='bg-transparent w-full px-5 flex flex-col' style={{minHeight: 160}}>
-        <div className={`text-white flex w-full justify-around text-center flex-1 items-center`} style={{minHeight: 160}}>
-          <div className='month w-40'>
-            <div className={styles.numbers}>
-              {months}
-            </div>
-            <div className={styles.words}>
-              Months
-            </div>
-          </div>
-          <div className={`${styles.separator} min-w-fit`}>
-            <span>:</span>
-          </div>
+      <div className='bg-transparent w-full h-screen px-5 flex flex-col' style={{minHeight: 160}}>
+        <div className={`flex flex-col items-center text-white justify-start h-32`}>
+          <span className={`${styles.spicyRiceShadow} text-7xl font-normal tracking-tighter`}>COUNTDOWN TO</span>
+          <span className={`${styles.spicyRiceShadow} text-4xl tracking-tighter`}>SOUNDS OF DOWNTOWN Vol. 5</span>
+        </div>
+        <div className={`${styles.countdownStroke} text-white self-center border-text flex justify-around text-center items-center h-28 w-2/3 pb-8`} style={{backgroundColor: '#33A9AC', border: '4px solid #0C0C0C', borderRadius: 12}}>
           <div className='week w-40'>
             <div className={styles.numbers}>
               {weeks}
@@ -92,73 +85,16 @@ export default function Home() {
             </div>
           </div>            
         </div>
-        <div className={`flex flex-col items-center text-white justify-start h-32`}>
-          <span className='text-4xl' style={{fontWeight: 700}}>GET THE TICKETS</span>
-          <span className='text-9xl leading-10 mt-3' style={{fontWeight: 900}}>NOW</span>
-        </div>
-        <div className={`flex text-white flex-1 min-w-full justify-around items-start pt-20`}>
-          <div className='w-72 bg-white h-48 text-black mx-1'>
-            <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-              Day 1 Ticket
-            </div>
-            <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
-              <div className='text-2xl leading-7'>
-                05 August 2023
-              </div>
-              <div className='flex flex-row items-center mt-3'>
-                <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
-                  START FROM
-                </div>
-                <div className='font-bold text-5xl'>
-                  149K
-                </div>
-              </div>
-            </div>
-            <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-              BUT TICKETS
-            </div>
+        <div className={`${styles.spicyRiceShadow} self-center text-8xl text-orange-300 mt-44`}>BUY TICKETS</div>
+        <div className={`flex text-white flex-1 min-w-full justify-around items-start pt-20 px-16`}>
+          <div className='text-black mx-1 relative w-1/4 h-48'>
+              <Image className='w-36' src={`/image/Ticket/ticket1.svg`} fill alt="My image"/>
           </div>
-          <div className='w-72 bg-white h-48 text-black mx-1'>
-            <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-              Day 1 Ticket
-            </div>
-            <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
-              <div className='text-2xl leading-7'>
-                05 August 2023
-              </div>
-              <div className='flex flex-row items-center mt-3'>
-                <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
-                  START FROM
-                </div>
-                <div className='font-bold text-5xl'>
-                  149K
-                </div>
-              </div>
-            </div>
-            <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-              BUT TICKETS
-            </div>
+          <div className='text-black mx-1 relative w-1/4 h-48'>
+              <Image className='w-36' src={`/image/Ticket/ticket2.svg`} fill alt="My image"/>
           </div>
-          <div className='w-72 bg-white h-48 text-black mx-1'>
-            <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-              Day 1 Ticket
-            </div>
-            <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
-              <div className='text-2xl leading-7'>
-                05 August 2023
-              </div>
-              <div className='flex flex-row items-center mt-3'>
-                <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
-                  START FROM
-                </div>
-                <div className='font-bold text-5xl'>
-                  149K
-                </div>
-              </div>
-            </div>
-            <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-              BUT TICKETS
-            </div>
+          <div className='text-black mx-1 relative w-1/4 h-48'>
+              <Image className='w-36' src={`/image/Ticket/ticket3.svg`} fill alt="My image"/>
           </div>
         </div>
       </div>

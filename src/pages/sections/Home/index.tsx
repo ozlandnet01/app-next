@@ -22,44 +22,12 @@ export default function Home() {
 
   return (
     <div id='home' className={`flex h-screen justify-center items-center`}>
-        <div className='flex h-1/4 flex-col justify-between items-center' style={{width: 488}}>
-        <div className='image'>
-            <Image src={`https://github.com/ozlandnet01/app-next/blob/main/public/logo/white.png?raw=true`} width={360} height={148} alt="My image"/>
-        </div>
-        <div className='bg-white w-full mt-11 px-5' style={{minHeight: 160}}>
-            <div className={`${styles.countdown} flex w-full  justify-around text-center`} style={{minHeight: 160}}>
-            <div className='month w-40'>
-                <div className={styles.numbers}>
-                {hours.toString().length == 1 ?  '0'+ hours.toString() : hours}
-                </div>
-                <div className={styles.words}>
-                Hours
-                </div>
+        <div className='flex h-screen flex-col min-w-full'>
+            <div className={`${styles.image} flex h-3/4 justify-center items-center`}>
+                <Image src={`/image/logo/logo-black.svg`} width={480} height={148} alt="My image"/>
             </div>
-            <div className={`${styles.separator} min-w-fit`}>
-                <span>:</span>
+            <div className={`${styles.banner} bg-white w-screen`} style={{minHeight: 215, minWidth: '100%'}}>           
             </div>
-            <div className='week w-40'>
-                <div className={styles.numbers}>
-                {minutes.toString().length == 1 ?  '0'+ minutes.toString() : minutes}
-                </div>
-                <div className={styles.words}>
-                Minutes
-                </div>
-            </div>
-            <div className={`${styles.separator} min-w-fit`}>
-                <span>:</span>
-            </div>
-            <div className='day w-40'>
-                <div className={styles.numbers}>
-                {seconds.toString().length == 1 ?  '0'+ seconds.toString() : seconds}
-                </div>
-                <div className={styles.words}>
-                Seconds
-                </div>
-            </div>              
-            </div>
-        </div>
         </div>
   </div>
   )

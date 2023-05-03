@@ -18,10 +18,21 @@
 }
 
 .countdown{
-    background:url('../../../../assets/img/bg.png')  
+    background:url('../../../../assets/img/bg.png')
     no-repeat center center;
     background-size:100%;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+}
+
+.image{
+    background: url('../../../../public/image/banner/bg01.svg');
+    background-size: cover;
+}
+
+.banner{
+    background: url('../../../../public/image/banner/banner-desktop.svg');
+    background-position: center bottom;
+    background-size: 100% auto;
 }

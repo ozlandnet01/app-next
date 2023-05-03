@@ -7,6 +7,7 @@ import Ticket from './sections/Ticket';
 import Image from 'next/image';
 import TestingComponent from '@/components/TestingComponent';
 import { CountdownProvider } from '../context/CountdownContext';
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,9 @@ export default function App() {
 
   return (
     <>
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Head>
       <CountdownProvider>
         <main className={`${styles.container} min-h-screen flex-col items-center justify-between`}>
           <Navbar />
@@ -29,11 +33,11 @@ export default function App() {
               <div className={`flex h-screen p-9`}>
                 <div className='w-full flex'>
                   <div className='flex items-center justify-center' style={{flex: 2}}>
-                    <Image src={`https://github.com/ozlandnet01/app-next/blob/main/public/logo/white.png?raw=true`} width={360} height={148} alt="My image"/>
+                    <Image src={`/logo/white.png`} width={360} height={148} alt="My image"/>
                   </div>
                   <div className='flex items-center justify-center' style={{flex: 3}}>
                     <div>
-                      <Image src={`https://github.com/ozlandnet01/app-next/blob/main/public/world-map.png?raw=true`} width={800} height={800} alt="My image"/>
+                      <Image src={`/world-map.png`} width={800} height={800} alt="My image"/>
                     </div>
                   </div>
                 </div>
