@@ -86,7 +86,7 @@ export default function Home() {
           </div>            
         </div>
         <div className={`self-center relative text-center text-orange-300 w-2/3 h-36 mt-10 block`}>
-          <Image src={`/image/Ticket/buy-tickets.svg`} alt='buy tickets' fill/>
+          <Image src={`https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/image/Ticket/buy-tickets.svg`} alt='buy tickets' fill/>
         </div>
         <div className={`flex text-white flex-1 min-w-full justify-center items-center md:flex-row flex-col px-16 md:-mt-10`}>
           <div className='text-black m-6 relative w-72 h-48 lg:mx-12 '>
