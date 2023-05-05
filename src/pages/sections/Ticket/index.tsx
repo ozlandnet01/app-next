@@ -25,8 +25,8 @@ export default function Home() {
 
 
   return (
-    <div id='ticket' className={`flex h-screen mt-20`}>
-      <div className='bg-transparent w-full h-screen px-5 flex flex-col' style={{minHeight: 160}}>
+    <div id='ticket' className={`flex lg:h-screen h-fit mt-20`}>
+      <div className='bg-transparent w-full h-fit px-5 flex flex-col' style={{minHeight: 160}}>
         <div className={`flex flex-col items-center text-white justify-start h-32`}>
           <span className={`${styles.spicyRiceShadow} text-7xl font-normal tracking-tighter`}>COUNTDOWN TO</span>
           <span className={`${styles.spicyRiceShadow} text-4xl tracking-tighter`}>SOUNDS OF DOWNTOWN Vol. 5</span>
@@ -85,8 +85,10 @@ export default function Home() {
             </div>
           </div>            
         </div>
-        <div className={`${styles.spicyRiceShadow} self-center text-8xl text-center text-orange-300 mt-44`}>BUY TICKETS</div>
-        <div className={`flex text-white flex-1 min-w-full justify-center items-center md:flex-row flex-col pt-20 px-16`}>
+        <div className={`self-center relative text-center text-orange-300 w-2/3 h-36 mt-10 block`}>
+          <Image src={`/image/Ticket/buy-tickets.svg`} alt='buy tickets' fill/>
+        </div>
+        <div className={`flex text-white flex-1 min-w-full justify-center items-center md:flex-row flex-col px-16 md:-mt-10`}>
           <div className='text-black m-6 relative w-72 h-48 lg:mx-12 '>
               <Image src={`https://raw.githubusercontent.com/ozlandnet01/app-next/a46c4cd1188ffe4b1a8507a0c951526611d0f0fb/public/image/Ticket/ticket1.svg`} fill alt="My image"/>
           </div>

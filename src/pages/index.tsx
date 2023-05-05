@@ -8,6 +8,7 @@ import Image from 'next/image';
 import TestingComponent from '@/components/TestingComponent';
 import { CountdownProvider } from '../context/CountdownContext';
 import Head from 'next/head';
+import { FaInstagram, FaTiktok, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,20 +31,46 @@ export default function App() {
           </TestingComponent>
           <div id='about'>
             <TestingComponent scrollPositions={ScrollPositions}>
-              <div className={`flex h-screen p-9`}>
-                <div className='w-full flex'>
-                  <div className='flex items-center justify-center' style={{flex: 2}}>
-                    {/* <Image src={`/logo/white.png`} width={360} height={148} alt="My image"/> */}
-                  </div>
-                  <div className='flex items-center justify-center' style={{flex: 3}}>
-                    <div>
-                      {/* <Image src={`/world-map.png`} width={800} height={800} alt="My image"/> */}
+              <div className={`flex`} style={{height: '60vh'}}>
+                <div className={`flex flex-col items-center bg-orange-400 text-white justify-start h-full w-2/5 p-9 relative`}>
+                  <div className={`${styles.spicyRiceShadow} text-7xl font-normal tracking-tighter`}>CONTACT US</div>
+                  <div className='contact-info absolute bottom-12 left-12'>
+                    <div className='email-contact'>
+                      <div className='font-bold text-xl'>EMAIL</div>
+                      <div>sod@sodfestival.com</div>
+                    </div>
+                    <div className='get-update'>
+                      <div className='font-bold text-xl'>GET UPDATED</div>
+                      <div className='flex justify-between w-32 items-center'> 
+                        <div><FaInstagram /></div>
+                        <div><FaTiktok /></div>
+                        <div><FaTwitter /></div>
+                        <div><FaYoutube /></div>
+                      </div>
                     </div>
                   </div>
+                </div>
+                <div className="w-full">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/6OPwsqy06lM"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
               </div>
             </TestingComponent>
             <TestingComponent scrollPositions={ScrollPositions}>
+              <div className={`h-screen relative z-0`}>
+                <div className={`${styles.carousel} absolute -z-10 top-36`}></div>
+                <div className={`${styles.rainbow} absolute -z-20 top-0`}></div>
+                <div className={`${styles.hallOfFame} absolute z-10`}></div>
+              </div>
+            </TestingComponent>
+          </div>
+          <TestingComponent scrollPositions={ScrollPositions}>
               <div className={`flex h-screen p-9`}>
                 <div className='w-full flex'>
                   <div className='flex items-center justify-center flex-1'>
@@ -98,186 +125,185 @@ export default function App() {
                   </div>
                 </div>
               </div>
-            </TestingComponent>
-            <TestingComponent scrollPositions={ScrollPositions}>
-              <div className={`flex p-9 h-screen flex-col`}>
-                <div className='flex font-bold text-4xl text-white justify-center mb-40'>
-                  <span>
-                    OUR VALUES
-                  </span>
-                </div>
-                <div>
-                  <div className='flex items-center justify-center'>
-                    <div className='flex flex-col text-white text-left w-56 mx-16'>
-                      <div className='leading-10 text-2xl font-bold whitespace-nowrap'>
-                        CUSTOMER ORIENTED
-                      </div>
-                      <div className='text-xl font-normal'>
-                        We are truly committed to make customers our top priority
-                      </div>
+          </TestingComponent>
+          <TestingComponent scrollPositions={ScrollPositions}>
+            <div className={`flex p-9 h-screen flex-col`}>
+              <div className='flex font-bold text-4xl text-white justify-center mb-40'>
+                <span>
+                  OUR VALUES
+                </span>
+              </div>
+              <div>
+                <div className='flex items-center justify-center'>
+                  <div className='flex flex-col text-white text-left w-56 mx-16'>
+                    <div className='leading-10 text-2xl font-bold whitespace-nowrap'>
+                      CUSTOMER ORIENTED
                     </div>
-                    <div className='flex flex-col text-white text-left w-56 mx-16'>
-                      <div className='leading-10 text-2xl font-bold whitespace-nowrap'>
-                        IMPACTFUL
-                      </div>
-                      <div className='text-xl font-normal'>
-                        Creating mutually beneficial relations with every parties related with our ecosystem
-                      </div>
+                    <div className='text-xl font-normal'>
+                      We are truly committed to make customers our top priority
                     </div>
-                    <div className='flex flex-col text-white text-left w-56 mx-16'>
-                      <div className='leading-10 text-2xl font-bold whitespace-nowrap'>
-                        CONTINOUS IMPROVEMENT
-                      </div>
-                      <div className='text-xl font-normal'>
-                        Always giving best efforts to improve our products, services, or processes.
-                      </div>
+                  </div>
+                  <div className='flex flex-col text-white text-left w-56 mx-16'>
+                    <div className='leading-10 text-2xl font-bold whitespace-nowrap'>
+                      IMPACTFUL
+                    </div>
+                    <div className='text-xl font-normal'>
+                      Creating mutually beneficial relations with every parties related with our ecosystem
+                    </div>
+                  </div>
+                  <div className='flex flex-col text-white text-left w-56 mx-16'>
+                    <div className='leading-10 text-2xl font-bold whitespace-nowrap'>
+                      CONTINOUS IMPROVEMENT
+                    </div>
+                    <div className='text-xl font-normal'>
+                      Always giving best efforts to improve our products, services, or processes.
                     </div>
                   </div>
                 </div>
               </div>
-            </TestingComponent>  
-            <TestingComponent scrollPositions={ScrollPositions}>
-              <div className={`flex p-9 h-screen flex-col`}>
-                <div className='flex font-bold text-4xl text-white justify-center'>
-                  <span>
-                    OUR SERVICES
-                  </span>
-                </div>
-                <div className='flex flex-col items-center'>
-                  <div className={`flex text-white flex-1 w-8/12 justify-center pt-20`}>
-                    <div className='w-72 bg-white h-48 text-black mx-5'>
-                      <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-                        Day 1 Ticket
+            </div>
+          </TestingComponent>  
+          <TestingComponent scrollPositions={ScrollPositions}>
+            <div className={`flex p-9 h-screen flex-col`}>
+              <div className='flex font-bold text-4xl text-white justify-center'>
+                <span>
+                  OUR SERVICES
+                </span>
+              </div>
+              <div className='flex flex-col items-center'>
+                <div className={`flex text-white flex-1 w-8/12 justify-center pt-20`}>
+                  <div className='w-72 bg-white h-48 text-black mx-5'>
+                    <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
+                      Day 1 Ticket
+                    </div>
+                    <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
+                      <div className='text-2xl leading-7'>
+                        05 August 2023
                       </div>
-                      <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
-                        <div className='text-2xl leading-7'>
-                          05 August 2023
+                      <div className='flex flex-row items-center mt-3'>
+                        <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
+                          START FROM
                         </div>
-                        <div className='flex flex-row items-center mt-3'>
-                          <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
-                            START FROM
-                          </div>
-                          <div className='font-bold text-5xl'>
-                            149K
-                          </div>
+                        <div className='font-bold text-5xl'>
+                          149K
                         </div>
-                      </div>
-                      <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-                        BUT TICKETS
                       </div>
                     </div>
-                    <div className='w-72 bg-white h-48 text-black mx-5'>
-                      <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-                        Day 1 Ticket
-                      </div>
-                      <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
-                        <div className='text-2xl leading-7'>
-                          05 August 2023
-                        </div>
-                        <div className='flex flex-row items-center mt-3'>
-                          <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
-                            START FROM
-                          </div>
-                          <div className='font-bold text-5xl'>
-                            149K
-                          </div>
-                        </div>
-                      </div>
-                      <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-                        BUT TICKETS
-                      </div>
-                    </div>
-                    <div className='w-72 bg-white h-48 text-black mx-5'>
-                      <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-                        Day 1 Ticket
-                      </div>
-                      <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
-                        <div className='text-2xl leading-7'>
-                          05 August 2023
-                        </div>
-                        <div className='flex flex-row items-center mt-3'>
-                          <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
-                            START FROM
-                          </div>
-                          <div className='font-bold text-5xl'>
-                            149K
-                          </div>
-                        </div>
-                      </div>
-                      <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-                        BUT TICKETS
-                      </div>
+                    <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
+                      BUT TICKETS
                     </div>
                   </div>
-                  <div className={`flex text-white flex-1 w-8/12 justify-center pt-20`}>
-                    <div className='w-72 bg-white h-48 text-black mx-5'>
-                      <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-                        Day 1 Ticket
+                  <div className='w-72 bg-white h-48 text-black mx-5'>
+                    <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
+                      Day 1 Ticket
+                    </div>
+                    <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
+                      <div className='text-2xl leading-7'>
+                        05 August 2023
                       </div>
-                      <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
-                        <div className='text-2xl leading-7'>
-                          05 August 2023
+                      <div className='flex flex-row items-center mt-3'>
+                        <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
+                          START FROM
                         </div>
-                        <div className='flex flex-row items-center mt-3'>
-                          <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
-                            START FROM
-                          </div>
-                          <div className='font-bold text-5xl'>
-                            149K
-                          </div>
+                        <div className='font-bold text-5xl'>
+                          149K
                         </div>
-                      </div>
-                      <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-                        BUT TICKETS
                       </div>
                     </div>
-                    <div className='w-72 bg-white h-48 text-black mx-5'>
-                      <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-                        Day 1 Ticket
+                    <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
+                      BUT TICKETS
+                    </div>
+                  </div>
+                  <div className='w-72 bg-white h-48 text-black mx-5'>
+                    <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
+                      Day 1 Ticket
+                    </div>
+                    <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
+                      <div className='text-2xl leading-7'>
+                        05 August 2023
                       </div>
-                      <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
-                        <div className='text-2xl leading-7'>
-                          05 August 2023
+                      <div className='flex flex-row items-center mt-3'>
+                        <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
+                          START FROM
                         </div>
-                        <div className='flex flex-row items-center mt-3'>
-                          <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
-                            START FROM
-                          </div>
-                          <div className='font-bold text-5xl'>
-                            149K
-                          </div>
+                        <div className='font-bold text-5xl'>
+                          149K
                         </div>
-                      </div>
-                      <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-                        BUT TICKETS
                       </div>
                     </div>
-                    <div className='w-72 bg-white h-48 text-black mx-5'>
-                      <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-                        Day 1 Ticket
+                    <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
+                      BUT TICKETS
+                    </div>
+                  </div>
+                </div>
+                <div className={`flex text-white flex-1 w-8/12 justify-center pt-20`}>
+                  <div className='w-72 bg-white h-48 text-black mx-5'>
+                    <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
+                      Day 1 Ticket
+                    </div>
+                    <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
+                      <div className='text-2xl leading-7'>
+                        05 August 2023
                       </div>
-                      <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
-                        <div className='text-2xl leading-7'>
-                          05 August 2023
+                      <div className='flex flex-row items-center mt-3'>
+                        <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
+                          START FROM
                         </div>
-                        <div className='flex flex-row items-center mt-3'>
-                          <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
-                            START FROM
-                          </div>
-                          <div className='font-bold text-5xl'>
-                            149K
-                          </div>
+                        <div className='font-bold text-5xl'>
+                          149K
                         </div>
                       </div>
-                      <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
-                        BUT TICKETS
+                    </div>
+                    <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
+                      BUT TICKETS
+                    </div>
+                  </div>
+                  <div className='w-72 bg-white h-48 text-black mx-5'>
+                    <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
+                      Day 1 Ticket
+                    </div>
+                    <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
+                      <div className='text-2xl leading-7'>
+                        05 August 2023
                       </div>
+                      <div className='flex flex-row items-center mt-3'>
+                        <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
+                          START FROM
+                        </div>
+                        <div className='font-bold text-5xl'>
+                          149K
+                        </div>
+                      </div>
+                    </div>
+                    <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
+                      BUT TICKETS
+                    </div>
+                  </div>
+                  <div className='w-72 bg-white h-48 text-black mx-5'>
+                    <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
+                      Day 1 Ticket
+                    </div>
+                    <div className={`h-4/6 flex flex-col justify-center items-center`} style={{background: '#878787'}}>
+                      <div className='text-2xl leading-7'>
+                        05 August 2023
+                      </div>
+                      <div className='flex flex-row items-center mt-3'>
+                        <div className='whitespace-break-spaces text-xl w-min leading-5 font-normal'>
+                          START FROM
+                        </div>
+                        <div className='font-bold text-5xl'>
+                          149K
+                        </div>
+                      </div>
+                    </div>
+                    <div className='flex justify-center items-center bg-white h-1/4 text-center text-2xl font-bold'>
+                      BUT TICKETS
                     </div>
                   </div>
                 </div>
               </div>
-            </TestingComponent>  
-          </div>
+            </div>
+          </TestingComponent>  
         </main>
       </CountdownProvider>
     </>
