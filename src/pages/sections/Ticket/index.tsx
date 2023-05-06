@@ -31,8 +31,8 @@ export default function Home() {
           <span className={`${styles.spicyRiceShadow} sm:text-7xl text-5xl font-normal tracking-tighter`}>COUNTDOWN TO</span>
           <span className={`${styles.spicyRiceShadow} sm:text-4xl text-2xl tracking-tighter`}>SOUNDS OF DOWNTOWN Vol. 5</span>
         </div>
-        <div className={`${styles.countdownStroke} text-white self-center border-text flex md:justify-around text-center md:items-center md:h-28 h-20 w-fit sm:pb-8`} style={{backgroundColor: '#33A9AC', border: '4px solid #0C0C0C', borderRadius: 12}}>
-          <div className='week md:w-40 w-18 flex flex-col justify-center'>
+        <div className={`${styles.countdownStroke} text-white self-center border-text flex md:justify-around text-center md:items-center md:h-28 h-20 sm:pb-8`} style={{backgroundColor: '#33A9AC', border: '4px solid #0C0C0C', borderRadius: 12}}>
+          <div className='week md:w-40 w-14 flex flex-col justify-center'>
             <div className={styles.numbers}>
               {weeks.toString().length == 1 ?  '0'+ weeks.toString() : weeks} 
             </div>
@@ -43,7 +43,7 @@ export default function Home() {
           <div className={`${styles.separator} min-w-fit`}>
             <span>:</span>
           </div>
-          <div className='day md:w-40 w-18 flex flex-col justify-center'>
+          <div className='day md:w-40 w-14 flex flex-col justify-center'>
             <div className={styles.numbers}>
               {days.toString().length == 1 ?  '0'+ days.toString() : days} 
             </div>
@@ -54,7 +54,7 @@ export default function Home() {
           <div className={`${styles.separator} min-w-fit`}>
             <span>:</span>
           </div>
-          <div className='day md:w-40 w-18 flex flex-col justify-center'>
+          <div className='day md:w-40 w-14 flex flex-col justify-center'>
             <div className={styles.numbers}>
               {hours.toString().length == 1 ?  '0'+ hours.toString() : hours} 
             </div>
@@ -65,7 +65,7 @@ export default function Home() {
           <div className={`${styles.separator} min-w-fit`}>
             <span>:</span>
           </div>
-          <div className='day md:w-40 w-18 flex flex-col justify-center'>
+          <div className='day md:w-40 w-14 flex flex-col justify-center'>
             <div className={styles.numbers}>
               {minutes.toString().length == 1 ?  '0'+ minutes.toString() : minutes} 
             </div>
@@ -76,7 +76,7 @@ export default function Home() {
           <div className={`${styles.separator} min-w-fit`}>
             <span>:</span>
           </div>
-          <div className='day md:w-40 w-18 flex flex-col justify-center'>
+          <div className='day md:w-40 w-14 flex flex-col justify-center'>
             <div className={styles.numbers}>
               {seconds.toString().length == 1 ?  '0'+ seconds.toString() : seconds} 
             </div>

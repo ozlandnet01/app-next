@@ -10,10 +10,19 @@ import { CountdownProvider } from '../context/CountdownContext';
 import Head from 'next/head';
 import { FaInstagram, FaTiktok, FaTwitter, FaYoutube } from 'react-icons/fa';
 import Carousel from '@/components/Carousel';
+import Sidebar from '@/components/Sidebar';
+import { useState } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    console.log(sidebarOpen)
+    setSidebarOpen(!sidebarOpen);
+  }
+
   const ScrollPositions = useScrollPosition();
   const images = [
     "https://github.com/ozlandnet01/app-next/raw/main/public/image/slider/slider1.svg",
@@ -29,7 +38,8 @@ export default function App() {
     </Head>
       <CountdownProvider>
         <main className={`${styles.container} min-h-screen flex-col items-center justify-between overflow-hidden`}>
-          <Navbar />
+          <Sidebar isOpen={sidebarOpen} toggleHandler={toggleSidebar}/>
+          <Navbar toggleHandler={toggleSidebar}/>
           <TestingComponent scrollPositions={ScrollPositions}>
             <Home />
           </TestingComponent>
@@ -95,55 +105,53 @@ export default function App() {
             </TestingComponent>
           </div>
           <TestingComponent scrollPositions={ScrollPositions}>
-              <div className={`flex h-screen p-9`}>
+              <div className={`flex h-full`}>
                 <div className='w-full flex'>
                   <div className='flex items-center justify-center flex-1'>
-                    <div className='flex flex-col text-white text-right'>
-                      <div className='leading-10 text-4xl font-bold'>
-                        SOUNDS OF DOWNTOWN
-                      </div>
+                    <div className='sodImage w-72 h-28 relative flex-1'>
+                      <Image src={'https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/image/logo/logo-purple.svg'} fill alt='logo-purple' />
+                    </div>
+                    <div className='flex flex-col text-white text-left flex-1'>
                       <div className='text-xl font-normal'>
-                      Sounds of Downtown (SoD) are events that are organized by PT. Serikat Orang Dalam (SOD), Jakarta based company that focuses on music, entertainment, & lifestyle industry.We bring your favorite artist musicians, foods and experiences into one place. Our goal is to provide unforgettable experiences through events, activities and products that we crafted.We aim to be the world&apos;s most customer-centric lifestyle company. We always try to make people happy and fulfill their entertainment needs in the best way possible.
-                      </div>
+                      Sounds of Downtown (SoD) are events that are organized by PT. Serikat Orang Dalam (SOD), Jakarta based company that focuses on music, entertainment, & lifestyle industry.We bring your favorite artist musicians, foods and experiences into one place. Our goal is to provide unforgettable experiences through events, activities and products that we crafted.We aim to be the world&#39;s most customer-centric lifestyle company. We always try to make people happy and fulfill their entertainment needs in the best way possible.</div>
                     </div>
                   </div>
-                  <div className='flex items-center justify-center flex-1'>
-                    <div className='flex w-full whole-4 flex-col text-white'>
-                      <div className='first-row w-full justify-around flex flex-row px-32 my-3'>
-                        <div className='first-item-first-row text-center'>
-                          <div className='font-black text-8xl'>
-                            06
-                          </div>
-                          <div className='text-4xl font-normal'>
-                            Main event
-                          </div>
-                        </div>
-                        <div className='second-item-first-row text-center'>
-                          <div className='font-black text-8xl'>
-                            200+
-                          </div>
-                          <div className='text-4xl font-normal'>
-                            Partners
-                          </div>
-                        </div>
+
+                </div>
+              </div>
+              <div className='flex items-center justify-center flex-1'>
+                <div className='flex w-full whole-4 flex-col text-white'>
+                  <div className='first-row w-full justify-around flex flex-row px-32 my-3'>
+                    <div className='first-item-first-row text-center'>
+                      <div className='font-black text-8xl'>
+                        06
                       </div>
-                      <div className='second-row w-full justify-around flex flex-row px-32 my-3'>
-                        <div className='first-item-first-row text-center'>
-                          <div className='font-black text-8xl'>
-                            30+
-                          </div>
-                          <div className='text-4xl font-normal'>
-                            Performers
-                          </div>
-                        </div>
-                        <div className='second-item-first-row text-center'>
-                          <div className='font-black text-8xl'>
-                            500k+
-                          </div>
-                          <div className='text-4xl font-normal'>
-                            Tickets Sold
-                          </div>
-                        </div>
+                      <div className='text-4xl font-normal'>
+                        Main event
+                      </div>
+                    </div>
+                    <div className='second-item-first-row text-center'>
+                      <div className='font-black text-8xl'>
+                        200+
+                      </div>
+                      <div className='text-4xl font-normal'>
+                        Partners
+                      </div>
+                    </div>
+                    <div className='first-item-first-row text-center'>
+                      <div className='font-black text-8xl'>
+                        30+
+                      </div>
+                      <div className='text-4xl font-normal'>
+                        Performers
+                      </div>
+                    </div>
+                    <div className='first-item-first-row text-center'>
+                      <div className='font-black text-8xl'>
+                        30+
+                      </div>
+                      <div className='text-4xl font-normal'>
+                        Performers
                       </div>
                     </div>
                   </div>

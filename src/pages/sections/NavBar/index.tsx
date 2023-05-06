@@ -1,9 +1,13 @@
 import React, {useEffect, useState } from 'react';
 import NavigationLink from '@/components/NavigationLink';
 import Image from 'next/image';
-import { FaTwitter, FaTiktok, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaTwitter, FaTiktok, FaInstagram, FaYoutube, FaBars } from 'react-icons/fa';
 
-const Navbar = ({ }) => {
+interface Props {
+  toggleHandler?: () => void;
+}
+
+const Navbar = ({ toggleHandler} : Props) => {
   const [scrolled, setScrolled] = useState(false);
 
   const onWindowScroll = () => {
@@ -18,14 +22,17 @@ const Navbar = ({ }) => {
   }, [])
 
   return (
-    <nav className={`${scrolled ? 'text-white bg-black h-14 bg-opacity-50' : 'bg-white text-black h-24'} w-full fixed  
-      flex justify-between px-10 transition duration-500 ease-linear z-10`}>
-      <div className='flex w-24 justify-center items-center ml-10'> 
+    <nav className={`${scrolled ? 'text-white bg-black h-14 bg-opacity-50' : 'sm:bg-white sm:text-black h-24'} bg-transparent w-full fixed 
+      flex justify-between items-center sm:px-10 px-5 transition duration-500 ease-linear z-10 text-white`}>
+      <div className='sm:flex w-24 justify-center items-center sm:ml-10'> 
         <a>
           <Image className='w-36' src={`https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/image/logo/logo-purple.svg`} width={500} height={500} alt="My image"/>
         </a>
       </div>
-      <div className="flex w-6/12">
+      <div className="sm:hidden" onClick={toggleHandler}>
+        <FaBars />
+      </div>
+      <div className="hidden sm:flex w-6/12">
         <ul className="flex w-full justify-around">
           <li>
             <NavigationLink
@@ -53,7 +60,7 @@ const Navbar = ({ }) => {
           </li>
         </ul>
       </div>
-      <div className='flex justify-between w-32 items-center'> 
+      <div className='sm:flex hidden justify-between w-32 items-center'> 
         <div><FaInstagram /></div>
         <div><FaTiktok /></div>
         <div><FaTwitter /></div>

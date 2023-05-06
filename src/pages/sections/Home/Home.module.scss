@@ -29,6 +29,7 @@
 .image{
     background: url('../../../../public/image/banner/bg01.svg');
     background-size: cover;
+    background-position: center;
 }
 
 .banner{
@@ -37,6 +38,13 @@
     background-position: center;
     min-height: 215px;
     max-width: 100%;
+}
+
+.bannerMobile{
+    background: url('../../../../public/image/banner/banner-mobile.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 @media (max-width: 1280px){

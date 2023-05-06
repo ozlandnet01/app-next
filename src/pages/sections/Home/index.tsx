@@ -21,14 +21,16 @@ export default function Home() {
 
 
   return (
-    <div id='home' className={`flex h-screen justify-center items-center pt-24`}>
-        <div className='flex h-full flex-col min-w-full'>
-            <div className={`${styles.image} flex h-3/4 justify-center items-center`}>
+    <div id='home' className={`flex h-screen justify-center items-center sm:pt-24`}>
+        <div className='flex sm:h-full h-screen flex-col min-w-full'>
+            <div className={`${styles.image} flex sm:h-3/4 h-screen justify-center items-center`}>
                 <Image src={`https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/image/logo/logo-black.svg`} width={480} height={148} alt="My image"/>
             </div>
-            <div className={`${styles.banner} md:bg-cover  bg-white`}>     
+            <div className={`${styles.banner} bg-white bg-right sm:block hidden`}>     
+            </div>
+            <div className={`${styles.bannerMobile} sm:hidden block h-screen`}>
             </div>
         </div>
-  </div>
+    </div>
   )
 }
