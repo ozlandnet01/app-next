@@ -13,4 +13,8 @@ module.exports = {
     loader: "imgix",
     path: "",
   },
+  swcMinify: true,
+  images: {
+    domains: ["placehold.co"],
+  },
 }

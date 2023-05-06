@@ -27,12 +27,12 @@ export default function Home() {
   return (
     <div id='ticket' className={`flex lg:h-screen h-fit mt-20`}>
       <div className='bg-transparent w-full h-fit px-5 flex flex-col' style={{minHeight: 160}}>
-        <div className={`flex flex-col items-center text-white justify-start h-32`}>
-          <span className={`${styles.spicyRiceShadow} text-7xl font-normal tracking-tighter`}>COUNTDOWN TO</span>
-          <span className={`${styles.spicyRiceShadow} text-4xl tracking-tighter`}>SOUNDS OF DOWNTOWN Vol. 5</span>
+        <div className={`flex flex-col items-center text-center text-white justify-start h-32`}>
+          <span className={`${styles.spicyRiceShadow} sm:text-7xl text-5xl font-normal tracking-tighter`}>COUNTDOWN TO</span>
+          <span className={`${styles.spicyRiceShadow} sm:text-4xl text-2xl tracking-tighter`}>SOUNDS OF DOWNTOWN Vol. 5</span>
         </div>
-        <div className={`${styles.countdownStroke} text-white self-center border-text flex justify-around text-center items-center h-28 w-fit pb-8`} style={{backgroundColor: '#33A9AC', border: '4px solid #0C0C0C', borderRadius: 12}}>
-          <div className='week md:w-40'>
+        <div className={`${styles.countdownStroke} text-white self-center border-text flex md:justify-around text-center md:items-center md:h-28 h-20 w-fit sm:pb-8`} style={{backgroundColor: '#33A9AC', border: '4px solid #0C0C0C', borderRadius: 12}}>
+          <div className='week md:w-40 w-18 flex flex-col'>
             <div className={styles.numbers}>
               {weeks.toString().length == 1 ?  '0'+ weeks.toString() : weeks} 
             </div>
@@ -43,7 +43,7 @@ export default function Home() {
           <div className={`${styles.separator} min-w-fit`}>
             <span>:</span>
           </div>
-          <div className='day md:w-40'>
+          <div className='day md:w-40 w-18'>
             <div className={styles.numbers}>
               {days.toString().length == 1 ?  '0'+ days.toString() : days} 
             </div>
@@ -54,7 +54,7 @@ export default function Home() {
           <div className={`${styles.separator} min-w-fit`}>
             <span>:</span>
           </div>
-          <div className='day md:w-40'>
+          <div className='day md:w-40 w-18'>
             <div className={styles.numbers}>
               {hours.toString().length == 1 ?  '0'+ hours.toString() : hours} 
             </div>
@@ -65,7 +65,7 @@ export default function Home() {
           <div className={`${styles.separator} min-w-fit`}>
             <span>:</span>
           </div>
-          <div className='day md:w-40'>
+          <div className='day md:w-40 w-18'>
             <div className={styles.numbers}>
               {minutes.toString().length == 1 ?  '0'+ minutes.toString() : minutes} 
             </div>
@@ -76,7 +76,7 @@ export default function Home() {
           <div className={`${styles.separator} min-w-fit`}>
             <span>:</span>
           </div>
-          <div className='day md:w-40'>
+          <div className='day md:w-40 w-18'>
             <div className={styles.numbers}>
               {seconds.toString().length == 1 ?  '0'+ seconds.toString() : seconds} 
             </div>
@@ -88,7 +88,7 @@ export default function Home() {
         <div className={`self-center relative text-center text-orange-300 w-2/3 h-36 mt-10 block`}>
           <Image src={`https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/image/Ticket/buy-tickets.svg`} alt='buy tickets' fill/>
         </div>
-        <div className={`flex text-white flex-1 min-w-full justify-center items-center md:flex-row flex-col px-16 md:-mt-10`}>
+        <div className={`flex text-white flex-1 min-w-full justify-center items-center sm:flex-row flex-col px-16 sm:-mt-10`}>
           <div className='text-black m-6 relative w-72 h-48 lg:mx-12 '>
               <Image src={`https://raw.githubusercontent.com/ozlandnet01/app-next/a46c4cd1188ffe4b1a8507a0c951526611d0f0fb/public/image/Ticket/ticket1.svg`} fill alt="My image"/>
           </div>
