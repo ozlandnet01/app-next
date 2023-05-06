@@ -12,9 +12,8 @@ module.exports = {
   images: {
     loader: "imgix",
     path: "",
+    domains: ["placehold.co", "github.com"],
+
   },
   swcMinify: true,
-  images: {
-    domains: ["placehold.co"],
-  },
 }

@@ -38,7 +38,7 @@ export default function App() {
           </TestingComponent>
           <div id='about'>
             <TestingComponent scrollPositions={ScrollPositions}>
-              <div className={`flex h-[55em]`}>
+              <div className={`flex sm:h-[55em] h-96`}>
                 <div className={`flex flex-col items-center bg-orange-400 text-white justify-start h-full w-full md:w-2/5 p-9 relative`}>
                   <div className={`${styles.spicyRiceShadow} text-7xl font-normal tracking-tighter`}>CONTACT US</div>
                   <div className='contact-info absolute bottom-12 left-12'>
