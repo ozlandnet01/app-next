@@ -37,14 +37,10 @@ const Sidebar = ({ isOpen, toggleHandler }: Props) => {
             clickHandler={() => {router.replace('/About'); if(toggleHandler !== undefined) toggleHandler();}}
           />
           <NavigationLink
-            to="technology"
-            label="Technologies"
-            clickHandler={toggleHandler}
-          />
-          <NavigationLink
-            to="contact"
-            label="Contact"
-            clickHandler={toggleHandler}
+            href='/Event'
+            to='event'
+            label="Past Events"
+            clickHandler={() => {router.replace('/Event'); if(toggleHandler !== undefined) toggleHandler();}}
           />
         <SocialMediaBar classNames='flex justify-between w-32 items-center mt-11' />
         </div>

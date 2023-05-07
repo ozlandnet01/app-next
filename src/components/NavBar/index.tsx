@@ -68,7 +68,7 @@ const Navbar = ({ toggleHandler} : Props) => {
               href='/Event'
               to="event"
               label="Past Events"
-              clickHandler={() => router.replace('/event')}
+              clickHandler={() => router.replace('/Event')}
             />
           </li>
         </ul>
