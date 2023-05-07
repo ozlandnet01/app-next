@@ -1,8 +1,9 @@
-import { FaInstagram, FaTiktok, FaTimes, FaTwitch, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import NavigationLink from "../NavigationLink";
 import styles from './Sidebar.module.scss';
 import SocialMediaBar from "../SocialMediaBar";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 interface Props {
     isOpen: boolean;
@@ -16,6 +17,9 @@ const Sidebar = ({ isOpen, toggleHandler }: Props) => {
       <aside className={`${styles.sidebar} ${isOpen ? styles.open : ''}`}>
         <div className={`${styles.close}`} onClick={toggleHandler}>
           <FaTimes />
+        </div>
+        <div className="relative w-80 h-56">
+          <Image src={'https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/image/logo/logo-purple.svg'} fill alt='logo-purple' />
         </div>
         <div className={`${styles.sidebarNavigation}`}>
           <NavigationLink
@@ -42,7 +46,7 @@ const Sidebar = ({ isOpen, toggleHandler }: Props) => {
             label="Past Events"
             clickHandler={() => {router.replace('/Event'); if(toggleHandler !== undefined) toggleHandler();}}
           />
-        <SocialMediaBar classNames='flex justify-between w-32 items-center mt-11' />
+          <SocialMediaBar classNames='flex justify-between w-32 items-center mt-11' />
         </div>
       </aside>
     )

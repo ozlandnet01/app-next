@@ -36,7 +36,7 @@ export default function App() {
           <Contact />
         </TestingComponent>
         <TestingComponent scrollPositions={ScrollPositions}>
-          <div className={`h-screen relative z-0`}>
+          <div className={`h-[76vh] sm:h-screen mt-10 relative z-0`}>
             <div className={`${styles.rainbow} absolute -z-20 top-0`}></div>
             <div className={`${styles.hallOfFame} absolute z-20`}></div>
             <div className="w-full mx-auto absolute h-full lg:top-32 top-36 bottom-0 my-2 z-10">

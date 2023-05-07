@@ -59,7 +59,7 @@ export default function About() {
             </div>
         </div>
         <div className={`flex p-9 flex-col my-16`}>
-            <div className='flex font-bold text-4xl text-white justify-center '>
+            <div className='flex font-bold text-5xl text-white justify-center '>
                 <span>
                     OUR VALUES
                 </span>

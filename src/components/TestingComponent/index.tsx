@@ -37,7 +37,7 @@ const TestingComponent : React.FC<Props> = ({scrollPositions, children}) => {
 
   
   return (
-    <div ref={divRef} className={`sm:min-h-fit min-h-fit bg-transparent ${styles.transition} + 
+    <div ref={divRef} className={`min-h-fit bg-transparent ${styles.transition} + 
                                 ${isShow ? styles.animate: styles.box}`} >
       {children}
     </div>
