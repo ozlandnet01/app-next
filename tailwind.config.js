@@ -14,6 +14,9 @@ module.exports = {
       },
       height: {
         '128': '32rem',
+      },
+      colors: {
+        'orange-sod': "#FFA646"
       }
     },
   },

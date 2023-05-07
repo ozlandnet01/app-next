@@ -1,6 +1,8 @@
 import { FaInstagram, FaTiktok, FaTimes, FaTwitch, FaTwitter, FaYoutube } from "react-icons/fa";
 import NavigationLink from "../NavigationLink";
 import styles from './Sidebar.module.scss';
+import SocialMediaBar from "../SocialMediaBar";
+import { useRouter } from "next/router";
 
 interface Props {
     isOpen: boolean;
@@ -8,6 +10,8 @@ interface Props {
 }
 
 const Sidebar = ({ isOpen, toggleHandler }: Props) => {
+    const router = useRouter();
+
     return (
       <aside className={`${styles.sidebar} ${isOpen ? styles.open : ''}`}>
         <div className={`${styles.close}`} onClick={toggleHandler}>
@@ -15,19 +19,22 @@ const Sidebar = ({ isOpen, toggleHandler }: Props) => {
         </div>
         <div className={`${styles.sidebarNavigation}`}>
           <NavigationLink
-            to="home"
-            label="Home"
-            clickHandler={toggleHandler}
+             href='/'
+             to="home"
+             label="Home"
+             clickHandler={() => {router.replace('/'); if(toggleHandler !== undefined) toggleHandler();}}
           />
           <NavigationLink
-            to="ticket"
+            href='/#ticket'
+            to='ticket'
             label="Ticket"
-            clickHandler={toggleHandler}
+            clickHandler={() => {router.replace('/#ticket'); if(toggleHandler !== undefined) toggleHandler();}}
           />
           <NavigationLink
-            to="project"
-            label="Projects"
-            clickHandler={toggleHandler}
+            href='/About'
+            to='about'
+            label="About"
+            clickHandler={() => {router.replace('/About'); if(toggleHandler !== undefined) toggleHandler();}}
           />
           <NavigationLink
             to="technology"
@@ -39,12 +46,7 @@ const Sidebar = ({ isOpen, toggleHandler }: Props) => {
             label="Contact"
             clickHandler={toggleHandler}
           />
-        <div className='flex justify-between w-32 items-center mt-11'> 
-            <div><FaInstagram /></div>
-            <div><FaTiktok /></div>
-            <div><FaTwitter /></div>
-            <div><FaYoutube /></div>
-        </div>
+        <SocialMediaBar classNames='flex justify-between w-32 items-center mt-11' />
         </div>
       </aside>
     )

@@ -27,13 +27,13 @@
 }
 
 .image{
-    background: url('../../../../public/image/banner/bg01.svg');
+    background: url('../../../public/image/banner/bg01.svg');
     background-size: cover;
     background-position: center;
 }
 
 .banner{
-    background: url('../../../../public/image/banner/banner-desktop.svg') no-repeat;
+    background: url('../../../public/image/banner/banner-desktop.svg') no-repeat;
     background-size: 100% auto;
     background-position: center;
     min-height: 215px;
@@ -41,7 +41,7 @@
 }
 
 .bannerMobile{
-    background: url('../../../../public/image/banner/banner-mobile.png') no-repeat;
+    background: url('../../../public/image/banner/banner-mobile.png') no-repeat;
     background-size: cover;
     background-position: center;
 

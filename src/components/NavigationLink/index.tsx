@@ -5,11 +5,13 @@ interface Props {
     to: string
     label: string;
     clickHandler?: () => void;
+    href?: string;
   }
 
-const NavigationLink = ({ to, label, clickHandler }: Props) => {
+const NavigationLink = ({ to, label, clickHandler, href }: Props) => {
   return (
     <Link
+      href={href}
       to={to}
       duration={500}
       offset={-64}

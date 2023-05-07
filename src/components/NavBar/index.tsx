@@ -2,17 +2,21 @@ import React, {useEffect, useState } from 'react';
 import NavigationLink from '@/components/NavigationLink';
 import Image from 'next/image';
 import { FaTwitter, FaTiktok, FaInstagram, FaYoutube, FaBars } from 'react-icons/fa';
+import { useRouter } from 'next/router';
+import SocialMediaBar from '../SocialMediaBar';
 
 interface Props {
   toggleHandler?: () => void;
 }
 
 const Navbar = ({ toggleHandler} : Props) => {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);  
+  const router = useRouter();
 
   const onWindowScroll = () => {
     setScrolled(window.scrollY >= 80);
   }
+
 
   useEffect(() => {
     window.addEventListener('scroll', onWindowScroll);
@@ -20,9 +24,10 @@ const Navbar = ({ toggleHandler} : Props) => {
       window.removeEventListener('scroll', onWindowScroll);
     }
   }, [])
+  
 
   return (
-    <nav className={`${scrolled ? 'text-white bg-black h-14 bg-opacity-50' : 'sm:bg-white sm:text-black h-24'} bg-transparent w-full fixed 
+    <nav className={`${scrolled ? 'text-white bg-black h-14 bg-opacity-50' : 'sm:bg-white sm:text-black h-24'} bg-opacity-50 w-full fixed 
       flex justify-between items-center sm:px-10 px-5 transition duration-500 ease-linear z-10 text-white`}>
       <div className='sm:flex w-24 justify-center items-center sm:ml-10'> 
         <a>
@@ -36,20 +41,26 @@ const Navbar = ({ toggleHandler} : Props) => {
         <ul className="flex w-full justify-around">
           <li>
             <NavigationLink
+              href='/'
               to="home"
               label="Home"
+              clickHandler={() => router.replace('/')}
             />
           </li>
           <li >
             <NavigationLink
-              to="ticket"
+              href='/#ticket'
+              to='ticket'
               label="Ticket"
+              clickHandler={() => router.replace('/#ticket')}
             />
           </li>          
           <li >
             <NavigationLink
+              href='/About'
               to="about"
               label="About"
+              clickHandler={() => router.replace('/About')}
             />
           </li>          
           <li >
@@ -60,12 +71,7 @@ const Navbar = ({ toggleHandler} : Props) => {
           </li>
         </ul>
       </div>
-      <div className='sm:flex hidden justify-between w-32 items-center'> 
-        <div><FaInstagram /></div>
-        <div><FaTiktok /></div>
-        <div><FaTwitter /></div>
-        <div><FaYoutube /></div>
-      </div>
+      <SocialMediaBar classNames='sm:flex hidden'/>
     </nav>
   )
 }
