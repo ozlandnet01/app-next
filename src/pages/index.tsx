@@ -1,17 +1,12 @@
 import { Inter } from 'next/font/google'
 import useScrollPosition from '@/hooks/ScrollPositions';
 import styles from './index.module.scss'
-import Navbar from '../components/NavBar';
 import Home from './Home';
 import Ticket from './Ticket';
 import Image from 'next/image';
 import TestingComponent from '@/components/TestingComponent';
-import { CountdownProvider } from '../context/CountdownContext';
 import Head from 'next/head';
-import { FaInstagram, FaTiktok, FaTwitter, FaYoutube } from 'react-icons/fa';
 import Carousel from '@/components/Carousel';
-import Sidebar from '@/components/Sidebar';
-import { useState } from 'react';
 import SocialMediaBar from '@/components/SocialMediaBar';
 
 const inter = Inter({ subsets: ['latin'] })

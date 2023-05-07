@@ -19,7 +19,6 @@ const NavigationLink = ({ to, label, clickHandler, href }: Props) => {
       spy
       onClick={clickHandler ? clickHandler : () => { }}
       className={`h-full flex align-middle items-center navigation-link hover:font-bold hover:text-xl transition-all duration-300 cursor-pointer`}
-      activeClass='border-b-4 border-solid border-grey-900 text-xl font-bold'
     >
       {label}
     </Link>

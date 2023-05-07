@@ -13,7 +13,6 @@ export default function Layout({ children } : Props) {
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
     const toggleSidebar = () => {
-      console.log(sidebarOpen)
       setSidebarOpen(!sidebarOpen);
     }
 
