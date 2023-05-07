@@ -28,7 +28,7 @@ const Navbar = ({ toggleHandler} : Props) => {
 
   return (
     <nav className={`${scrolled ? ' h-14 bg-opacity-50' : 'h-24'} transition duration-500 ease-linear text-white bg-black bg-opacity-50 w-full fixed 
-      flex justify-between items-center sm:px-10 px-5 z-10`}>
+      flex justify-between items-center sm:px-10 px-5 z-10 select-none`}>
       <div className='sm:flex w-24 justify-center items-center sm:ml-10'> 
         <a>
           <Image className='w-36' src={`https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/image/logo/logo-purple.svg`}

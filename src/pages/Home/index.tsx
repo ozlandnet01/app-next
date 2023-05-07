@@ -23,7 +23,7 @@ export default function Home() {
 
 
   return (
-    <div id='home' className={`flex h-screen justify-center items-center`}>
+    <div id='home' className={`flex h-screen justify-center items-center select-none`}>
         <div className='flex sm:h-full h-screen flex-col min-w-full'>
             <div className={`${styles.image} flex sm:h-3/4 h-screen justify-center items-center`}>
                 <Image src={`https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/image/logo/logo-black.svg`} width={480} height={148} alt="My image"/>

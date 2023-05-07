@@ -25,7 +25,7 @@ export default function Home() {
 
 
   return (
-    <div id='ticket' className={`flex lg:h-screen h-fit mt-32`}>
+    <div id='ticket' className={`flex lg:h-screen h-fit mt-32 select-none`}>
       <div className='bg-transparent w-full h-fit px-5 flex flex-col' style={{minHeight: 160}}>
         <div className={`flex flex-col items-center text-center text-white justify-start h-32`}>
           <span className={`${styles.spicyRiceShadow} sm:text-7xl text-5xl font-normal tracking-tighter`}>COUNTDOWN TO</span>
