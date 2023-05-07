@@ -28,7 +28,7 @@ export default function Home() {
             <div className={`${styles.image} flex sm:h-3/4 h-screen justify-center items-center`}>
                 <Image src={`https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/image/logo/logo-black.svg`} width={480} height={148} alt="My image"/>
             </div>
-            <div className={`${styles.banner} bg-white bg-right sm:block hidden`} onClick={() => router.replace('/#ticket')}>     
+            <div className={`${styles.banner} bg-orange-sod bg-right sm:block hidden`} onClick={() => router.replace('/#ticket')}>     
             </div>
             <div className={`${styles.bannerMobile} sm:hidden block h-screen`} onClick={() => router.replace('/#ticket')}>
             </div>

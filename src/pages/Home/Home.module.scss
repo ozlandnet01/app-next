@@ -16,21 +16,17 @@
 
 .banner{
     background: url('../../../public/image/banner/banner-desktop.svg') no-repeat;
-    background-size: 100% auto;
-    background-position: center;
+    background-size: cover;
+    background-position: right;
     min-height: 215px;
     max-width: 100%;
+    cursor: pointer;
 }
 
 .bannerMobile{
     background: url('../../../public/image/banner/banner-mobile.png') no-repeat;
     background-size: cover;
     background-position: center;
+    background-size: 100% 100%;
 
-}
-
-@media (max-width: 1280px){
-    .banner{
-        background-size: cover;
-    }
 }
