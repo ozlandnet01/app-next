@@ -4,7 +4,7 @@ import Contact from '../../components/Contact';
 
 export default function About() {
   return (
-    <div className='flex flex-col justify-center pt-36'>
+    <div id='about' className='flex flex-col justify-center pt-36'>
         <div className={`flex h-full mb-8`}>
             <div className='w-full flex'>
                 <div className='flex items-center justify-around sm:flex-row flex-col w-full '>
