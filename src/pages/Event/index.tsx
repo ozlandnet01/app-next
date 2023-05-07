@@ -85,18 +85,18 @@ export default function event() {
             </div>
             <div className='eventMobile sm:hidden flex flex-col'>
             {pastEvents.map((event: any, idx: number) => {
-               return (<div key={idx} className='past-event flex flex-col items-center justify-around px-14 mt-24'> 
+               return (<div key={idx} className='past-event flex flex-col items-center justify-around px-12 mt-24'> 
                     <div className='event-poster h-[36rem] relative mr-6 w-full'>
                         <Image src={event.poster_url} fill alt='logo-purple' />
                     </div>
-                    <div className='detail-event flex flex-col'>
+                    <div className='detail-event flex flex-col w-full'>
                         <h3 className='font-bold text-4xl mb-5 text-white'>{event.title}</h3>
                         <div className='font-bold text-xl text-white'>
                             {event.description}
                         </div>
                         <div className='event-buttons mt-4 flex'>
-                            <div className='flex items-center justify-around bg-orange-sod mx-2 text-lg font-bold w-40'><span>HIGHLIGHTS</span> <FaArrowRight /></div>
-                            <div className='flex items-center justify-around bg-orange-sod mx-2 text-lg font-bold whitespace-nowrap w-56'><span>AUDIENCE GALLERY</span><FaArrowRight /></div>
+                            <div className='flex items-center justify-around bg-orange-sod rounded-sm text-lg font-bold w-40'><span>HIGHLIGHTS</span> <FaArrowRight /></div>
+                            <div className='flex items-center justify-around bg-orange-sod rounded-sm mx-2 text-lg font-bold whitespace-nowrap w-56'><span>AUDIENCE GALLERY</span><FaArrowRight /></div>
                         </div>
                     </div>
                 </div>)
