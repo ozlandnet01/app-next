@@ -7,40 +7,31 @@ export default function event() {
     const pastEvents : any = [
         {
             title: 'SOD VOL 1',
-            description: 'Sounds of Downtown (SoD) are events that are organized by PT. Serikat Orang Dalam (SOD), Jakarta based company that focuses on music, entertainment, & lifestyle industry.We bring your favorite artist musicians, foods and experiences into one place. Our goal is to provide unforgettable experiences through events, activities and products that we crafted.We aim to be the world&#39;s most customer-centric lifestyle company. We always try to make people happy and fulfill their entertainment needs in the best way possible.',
-            highlight_url: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
-            highlight_gallery: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
-            poster_url: 'https://raw.githubusercontent.com/ozlandnet01/app-next/7434f22cef4cd6c7d11ffacc3684fbd59e3ce490/public/image/Poster/poster-sod1.svg'
+            highlight_url: 'https://youtu.be/t7_RI8c3cBw',
+            poster_url: 'https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/poster/sod1.webp'
         },
         {
             title: 'SOD VOL 2',
-            description: 'Sounds of Downtown (SoD) are events that are organized by PT. Serikat Orang Dalam (SOD), Jakarta based company that focuses on music, entertainment, & lifestyle industry.We bring your favorite artist musicians, foods and experiences into one place. Our goal is to provide unforgettable experiences through events, activities and products that we crafted.We aim to be the world&#39;s most customer-centric lifestyle company. We always try to make people happy and fulfill their entertainment needs in the best way possible.',
-            highlight_url: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
-            highlight_gallery: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
-            poster_url: 'https://raw.githubusercontent.com/ozlandnet01/app-next/7434f22cef4cd6c7d11ffacc3684fbd59e3ce490/public/image/Poster/poster-sod1.svg'
+            highlight_url: 'https://youtu.be/yXkBWmAYe0Y',
+            highlight_gallery: 'https://drive.google.com/drive/folders/1D5ZGs1nECKr1t14qXGdU97Vy31Jkbwct?usp=share_link',
+            poster_url: 'https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/poster/sod2.webp'
         },
         {
             title: 'SOD VOL 3',
-            description: 'Sounds of Downtown (SoD) are events that are organized by PT. Serikat Orang Dalam (SOD), Jakarta based company that focuses on music, entertainment, & lifestyle industry.We bring your favorite artist musicians, foods and experiences into one place. Our goal is to provide unforgettable experiences through events, activities and products that we crafted.We aim to be the world&#39;s most customer-centric lifestyle company. We always try to make people happy and fulfill their entertainment needs in the best way possible.',
-            highlight_url: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
-            highlight_gallery: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
-            poster_url: 'https://raw.githubusercontent.com/ozlandnet01/app-next/7434f22cef4cd6c7d11ffacc3684fbd59e3ce490/public/image/Poster/poster-sod1.svg'
+            highlight_url: 'https://youtu.be/LO-1WhJDNKg',
+            highlight_gallery: 'https://drive.google.com/drive/folders/1D5ZGs1nECKr1t14qXGdU97Vy31Jkbwct?usp=share_link',
+            poster_url: 'https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/poster/sod3.webp'
         },
-        
         {
             title: 'SOD VOL 4',
-            description: 'Sounds of Downtown (SoD) are events that are organized by PT. Serikat Orang Dalam (SOD), Jakarta based company that focuses on music, entertainment, & lifestyle industry.We bring your favorite artist musicians, foods and experiences into one place. Our goal is to provide unforgettable experiences through events, activities and products that we crafted.We aim to be the world&#39;s most customer-centric lifestyle company. We always try to make people happy and fulfill their entertainment needs in the best way possible.',
-            highlight_url: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
-            highlight_gallery: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
-            poster_url: 'https://raw.githubusercontent.com/ozlandnet01/app-next/7434f22cef4cd6c7d11ffacc3684fbd59e3ce490/public/image/Poster/poster-sod1.svg'
-        },
-        
+            highlight_url: 'https://youtu.be/R7u11joIqx4',
+            highlight_gallery: 'https://drive.google.com/drive/folders/1D5ZGs1nECKr1t14qXGdU97Vy31Jkbwct?usp=share_link',
+            poster_url: 'https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/poster/sod4.webp'
+        },   
         {
             title: 'MISELIA',
-            description: 'Sounds of Downtown (SoD) are events that are organized by PT. Serikat Orang Dalam (SOD), Jakarta based company that focuses on music, entertainment, & lifestyle industry.We bring your favorite artist musicians, foods and experiences into one place. Our goal is to provide unforgettable experiences through events, activities and products that we crafted.We aim to be the world&#39;s most customer-centric lifestyle company. We always try to make people happy and fulfill their entertainment needs in the best way possible.',
-            highlight_url: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
-            highlight_gallery: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
-            poster_url: 'https://raw.githubusercontent.com/ozlandnet01/app-next/7434f22cef4cd6c7d11ffacc3684fbd59e3ce490/public/image/Poster/poster-sod1.svg'
+            highlight_gallery: 'https://drive.google.com/drive/folders/12t2uaGS0y_Rq51WcBQaQkTwXnFa098Ye?usp=share_link',
+            poster_url: 'https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/poster/miselia.webp'
         }
     ];
 
@@ -61,37 +52,33 @@ export default function event() {
                 {pastEvents.map((event: any, idx: number) => {
                     if(idx % 2 === 0){
                         return (
-                        <div key={idx} className='past-event flex items-center justify-around px-14 mt-24'> 
+                        <div key={idx} className='past-event flex items-center justify-around px-24 mt-24'> 
                             <div className='detail-event flex flex-col flex-1 mr-6'>
                                 <h3 className='font-bold text-4xl mb-5 text-white'>{event.title}</h3>
-                                <div className='font-bold text-xl text-white'>
-                                    {event.description}
-                                </div>
                                 <div className='event-buttons mt-4 flex'>
-                                    <div className='flex items-center justify-around bg-orange-sod mx-2 text-lg font-bold w-40'><a>HIGHLIGHTS</a> <FaArrowRight />
-                                    </div>
-                                    <div className='flex items-center justify-around bg-orange-sod mx-2 text-lg font-bold whitespace-nowrap w-56'><a>AUDIENCE GALLERY</a><FaArrowRight />
-                                    </div>
+                                    {(event.highlight_url)  && <div onClick={() => window.open(event.highlight_url)} className='flex items-center cursor-pointer justify-around bg-orange-sod mx-2 text-lg font-bold w-40'><a>HIGHLIGHTS</a> <FaArrowRight />
+                                    </div>}
+                                    {(event.highlight_gallery)  && <div onClick={() => window.open(event.highlight_gallery)} className='flex items-center cursor-pointer justify-around bg-orange-sod mx-2 text-lg font-bold whitespace-nowrap w-56'><a>AUDIENCE GALLERY</a><FaArrowRight />
+                                    </div>}
                                 </div>
                             </div>
                             <div className='event-poster h-[36rem] relative flex-1 p-10'>
-                                <Image src={event.poster_url} fill alt='logo-purple' />
+                                <img src={event.poster_url} alt={event.title} />
                             </div>
                         </div>)
                     }else{
                         return (
-                        <div key={idx} className='past-event flex items-center justify-around px-14 mt-24'> 
+                        <div key={idx} className='past-event flex items-center justify-around px-24 mt-24'> 
                             <div className='event-poster h-[36rem] relative flex-1 mr-6'>
-                                <Image src={event.poster_url} fill alt='logo-purple' />
+                                <img src={event.poster_url} alt={event.title} />
                             </div>
                             <div className='detail-event flex flex-col flex-1'>
                                 <h3 className='font-bold text-4xl mb-5 text-white'>{event.title}</h3>
-                                <div className='font-bold text-xl text-white'>
-                                    {event.description}
-                                </div>
                                 <div className='event-buttons mt-4 flex'>
-                                    <div className='flex items-center justify-around bg-orange-sod mx-2 text-lg font-bold w-40'><a>HIGHLIGHTS</a> <FaArrowRight /></div>
-                                    <div className='flex items-center justify-around bg-orange-sod mx-2 text-lg font-bold whitespace-nowrap w-56'><a>AUDIENCE GALLERY</a><FaArrowRight /></div>
+                                    {(event.highlight_url)  && <div onClick={() => window.open(event.highlight_url)} className='flex items-center cursor-pointer justify-around bg-orange-sod mx-2 text-lg font-bold w-40'><a>HIGHLIGHTS</a> <FaArrowRight />
+                                    </div>}
+                                    {(event.highlight_gallery)  && <div onClick={() => window.open(event.highlight_gallery)} className='flex items-center cursor-pointer justify-around bg-orange-sod mx-2 text-lg font-bold whitespace-nowrap w-56'><a>AUDIENCE GALLERY</a><FaArrowRight />
+                                    </div>}
                                 </div>
                             </div>
                         </div>
@@ -103,7 +90,7 @@ export default function event() {
             {pastEvents.map((event: any, idx: number) => {
                return (<div key={idx} className='past-event flex flex-col items-center justify-around px-12 mt-24'> 
                     <div className='event-poster h-[36rem] relative mr-6 w-full'>
-                        <Image src={event.poster_url} fill alt='logo-purple' />
+                        <Image src={event.poster_url} fill alt={event.title} />
                     </div>
                     <div className='detail-event flex flex-col w-full'>
                         <h3 className='font-bold text-4xl mb-5 text-white'>{event.title}</h3>
@@ -111,8 +98,8 @@ export default function event() {
                             {event.description}
                         </div>
                         <div className='event-buttons mt-4 flex'>
-                            <div className='flex items-center justify-around bg-orange-sod rounded-sm text-lg font-bold w-40'><a>HIGHLIGHTS</a> <FaArrowRight /></div>
-                            <div className='flex items-center justify-around bg-orange-sod rounded-sm mx-2 text-lg font-bold whitespace-nowrap w-56'><a>AUDIENCE GALLERY</a><FaArrowRight /></div>
+                            {(event.highlight_url)  && <div onClick={() => window.open(event.highlight_url)} className='flex items-center cursor-pointer justify-around bg-orange-sod rounded-sm text-lg font-bold w-40'><a>HIGHLIGHTS</a> <FaArrowRight /></div>}
+                            {(event.highlight_gallery)  && <div onClick={() => window.open(event.highlight_gallery)} className='flex items-center cursor-pointer justify-around bg-orange-sod rounded-sm mx-2 text-lg font-bold whitespace-nowrap w-56'><a>AUDIENCE GALLERY</a><FaArrowRight /></div>}
                         </div>
                     </div>
                 </div>)
