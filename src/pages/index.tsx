@@ -14,10 +14,12 @@ const inter = Inter({ subsets: ['latin'] })
 export default function App() {
   const ScrollPositions = useScrollPosition();
   const images = [
-    "https://github.com/ozlandnet01/app-next/raw/main/public/image/slider/slider1.svg",
-    "https://github.com/ozlandnet01/app-next/raw/main/public/image/slider/slider1.svg",
-    "https://github.com/ozlandnet01/app-next/raw/main/public/image/slider/slider1.svg",
-    "https://github.com/ozlandnet01/app-next/raw/main/public/image/slider/slider1.svg",
+    "https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/halloffame/2.webp",
+    "https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/halloffame/3.webp",
+    "https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/halloffame/4.webp",
+    "https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/halloffame/5.webp",
+    "https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/halloffame/6.webp",
+    "https://raw.githubusercontent.com/ozlandnet01/app-next/main/public/halloffame/1.webp",
   ];
 
   return (
@@ -51,7 +53,7 @@ export default function App() {
                     //   - we want this slide to not be able to grow or shrink and take up 100% width of the viewport.
                     <div className="relative lg:h-[55em] h-128 flex-[0_0_100%] resize w-full" key={i}>
                       {/* use object-cover + fill since we don't know the height and width of the parent */}
-                      <Image src={src} fill className="object-cover" alt="alt" />
+                      <img src={src} alt="alt" className='h-full w-full' />
                     </div>
                   );
                 })}
