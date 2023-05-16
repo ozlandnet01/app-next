@@ -90,7 +90,7 @@ export default function event() {
             {pastEvents.map((event: any, idx: number) => {
                return (<div key={idx} className='past-event flex flex-col items-center justify-around px-12 mt-24'> 
                     <div className='event-poster h-[36rem] relative mr-6 w-full'>
-                        <Image src={event.poster_url} fill alt={event.title} />
+                        <img src={event.poster_url} alt={event.title} />
                     </div>
                     <div className='detail-event flex flex-col w-full'>
                         <h3 className='font-bold text-4xl mb-5 text-white'>{event.title}</h3>

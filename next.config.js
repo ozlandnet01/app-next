@@ -6,9 +6,6 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
-  output: {
-    dir: 'out',
-  },  
   images: {
     loader: "imgix",
     path: "",
