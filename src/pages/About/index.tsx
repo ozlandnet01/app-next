@@ -60,30 +60,30 @@ export default function About() {
         </div>
         <div className={`flex p-9 flex-col my-16`}>
             <div className='flex font-bold text-5xl text-white justify-center '>
-                <span>
+                <span className='bg-[#982062] p-3 border-[#FFA646] border-4'>
                     OUR VALUES
                 </span>
             </div>
             <div>
             <div className='flex items-center justify-center flex-col sm:flex-row'>
-                <div className='flex flex-col text-white text-left w-56 mx-16 mt-12 items-center'>
-                    <div className='leading-10 text-2xl font-bold whitespace-nowrap text-orange-sod text-center'>
+                <div className='flex flex-col text-white text-left w-64 mx-16 mt-12 h-56 justify-around items-center p-4 border-[#FFA646] border-4'>
+                    <div className='leading-10 text-xl font-bold whitespace-nowrap text-orange-sod text-center'>
                         CUSTOMER ORIENTED
                     </div>
                     <div className='text-xl font-normal text-center'>
                         We are truly committed to make customers our top priority
                     </div>
                 </div>
-                <div className='flex flex-col text-white text-left w-56 mx-16 mt-12 items-center'>
-                    <div className='leading-10 text-2xl font-bold whitespace-nowrap text-orange-sod text-center'>
+                <div className='flex flex-col text-white text-left w-64 mx-16 mt-12 h-56 justify-around items-center p-4 border-[#FFA646] border-4'>
+                    <div className='leading-10 text-xl font-bold whitespace-nowrap text-orange-sod text-center'>
                         IMPACTFUL
                     </div>
                     <div className='text-xl font-normal text-center'>
                         Creating mutually beneficial relations with every parties related with our ecosystem
                     </div>
                 </div>
-                <div className='flex flex-col text-white text-left w-56 mx-16 mt-12 items-center'>
-                    <div className='leading-10 text-2xl font-bold w-fit whitespace-nowrap text-orange-sod text-center'>
+                <div className='flex flex-col text-white text-left w-64 mx-16 mt-12 h-56 justify-around items-center p-4 border-[#FFA646] border-4'>
+                    <div className='leading-10 text-xl font-bold w-fit whitespace-nowrap text-orange-sod text-center'>
                         CONTINOUS IMPROVEMENT
                     </div>
                     <div className='text-xl font-normal text-center'>
