@@ -25,6 +25,22 @@ export default function event() {
             highlight_url: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
             highlight_gallery: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
             poster_url: 'https://raw.githubusercontent.com/ozlandnet01/app-next/7434f22cef4cd6c7d11ffacc3684fbd59e3ce490/public/image/Poster/poster-sod1.svg'
+        },
+        
+        {
+            title: 'SOD VOL 4',
+            description: 'Sounds of Downtown (SoD) are events that are organized by PT. Serikat Orang Dalam (SOD), Jakarta based company that focuses on music, entertainment, & lifestyle industry.We bring your favorite artist musicians, foods and experiences into one place. Our goal is to provide unforgettable experiences through events, activities and products that we crafted.We aim to be the world&#39;s most customer-centric lifestyle company. We always try to make people happy and fulfill their entertainment needs in the best way possible.',
+            highlight_url: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
+            highlight_gallery: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
+            poster_url: 'https://raw.githubusercontent.com/ozlandnet01/app-next/7434f22cef4cd6c7d11ffacc3684fbd59e3ce490/public/image/Poster/poster-sod1.svg'
+        },
+        
+        {
+            title: 'MISELIA',
+            description: 'Sounds of Downtown (SoD) are events that are organized by PT. Serikat Orang Dalam (SOD), Jakarta based company that focuses on music, entertainment, & lifestyle industry.We bring your favorite artist musicians, foods and experiences into one place. Our goal is to provide unforgettable experiences through events, activities and products that we crafted.We aim to be the world&#39;s most customer-centric lifestyle company. We always try to make people happy and fulfill their entertainment needs in the best way possible.',
+            highlight_url: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
+            highlight_gallery: 'https://www.youtube.com/watch?v=iv_P7v7lWPs',
+            poster_url: 'https://raw.githubusercontent.com/ozlandnet01/app-next/7434f22cef4cd6c7d11ffacc3684fbd59e3ce490/public/image/Poster/poster-sod1.svg'
         }
     ];
 
@@ -52,9 +68,9 @@ export default function event() {
                                     {event.description}
                                 </div>
                                 <div className='event-buttons mt-4 flex'>
-                                    <div className='flex items-center justify-around bg-orange-sod mx-2 text-lg font-bold w-40'><span>HIGHLIGHTS</span> <FaArrowRight />
+                                    <div className='flex items-center justify-around bg-orange-sod mx-2 text-lg font-bold w-40'><a>HIGHLIGHTS</a> <FaArrowRight />
                                     </div>
-                                    <div className='flex items-center justify-around bg-orange-sod mx-2 text-lg font-bold whitespace-nowrap w-56'><span>AUDIENCE GALLERY</span><FaArrowRight />
+                                    <div className='flex items-center justify-around bg-orange-sod mx-2 text-lg font-bold whitespace-nowrap w-56'><a>AUDIENCE GALLERY</a><FaArrowRight />
                                     </div>
                                 </div>
                             </div>
@@ -74,8 +90,8 @@ export default function event() {
                                     {event.description}
                                 </div>
                                 <div className='event-buttons mt-4 flex'>
-                                    <div className='flex items-center justify-around bg-orange-sod mx-2 text-lg font-bold w-40'><span>HIGHLIGHTS</span> <FaArrowRight /></div>
-                                    <div className='flex items-center justify-around bg-orange-sod mx-2 text-lg font-bold whitespace-nowrap w-56'><span>AUDIENCE GALLERY</span><FaArrowRight /></div>
+                                    <div className='flex items-center justify-around bg-orange-sod mx-2 text-lg font-bold w-40'><a>HIGHLIGHTS</a> <FaArrowRight /></div>
+                                    <div className='flex items-center justify-around bg-orange-sod mx-2 text-lg font-bold whitespace-nowrap w-56'><a>AUDIENCE GALLERY</a><FaArrowRight /></div>
                                 </div>
                             </div>
                         </div>
@@ -95,8 +111,8 @@ export default function event() {
                             {event.description}
                         </div>
                         <div className='event-buttons mt-4 flex'>
-                            <div className='flex items-center justify-around bg-orange-sod rounded-sm text-lg font-bold w-40'><span>HIGHLIGHTS</span> <FaArrowRight /></div>
-                            <div className='flex items-center justify-around bg-orange-sod rounded-sm mx-2 text-lg font-bold whitespace-nowrap w-56'><span>AUDIENCE GALLERY</span><FaArrowRight /></div>
+                            <div className='flex items-center justify-around bg-orange-sod rounded-sm text-lg font-bold w-40'><a>HIGHLIGHTS</a> <FaArrowRight /></div>
+                            <div className='flex items-center justify-around bg-orange-sod rounded-sm mx-2 text-lg font-bold whitespace-nowrap w-56'><a>AUDIENCE GALLERY</a><FaArrowRight /></div>
                         </div>
                     </div>
                 </div>)
